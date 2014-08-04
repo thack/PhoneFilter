@@ -2,9 +2,12 @@
 
 int main(int argc, char *argv[])
 {
-    char input[255] = "(612)567-9876";
+    char input[255];
     char digits[255];
     char *p, *out;
+    
+    printf("input: ");
+    scanf("%s", input);
     
     p = input;
     out = digits;
@@ -16,5 +19,5 @@ int main(int argc, char *argv[])
     }
     *out ='\0';
     
-    printf("%s\n%s\n", input, digits);
+    printf("input: %s\noutput: %s\n", input, digits);
 }
